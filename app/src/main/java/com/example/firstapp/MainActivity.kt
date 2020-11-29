@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         textView = findViewById(R.id.displayLabel)
-        //Log.i("нулевой элемент" + (textView.text.toString()[0]).toString(),"нулевой")
         textView.text = ""
         // buttons
         btnOne = findViewById(R.id.button13)
