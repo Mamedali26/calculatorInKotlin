@@ -184,7 +184,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         var screen = textView.text.toString()
-        if (screen != "+" && screen != "-" && screen != "x" && screen != "+") {
+        if (screen != "+" && screen != "-" && screen != "x" && screen != "÷") {
             secondNumber = textView.text.toString().toDouble()
             btnEqual.isClickable = true
         }
@@ -193,7 +193,7 @@ class MainActivity : AppCompatActivity() {
     fun mathOps(view: View) {
         var screen = textView.text.toString()
         if (textView.text != "" && view.tag != "10" && view.tag != "17") {
-            if (screen != "+" && screen != "-" && screen != "x" && screen != "+") {
+            if (screen != "+" && screen != "-" && screen != "x" && screen != "÷") {
                 firstNumber = textView.text.toString().toDouble()
             }
             when(view.tag) {
@@ -212,7 +212,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 "13" -> {
-                    str = "/"
+                    str = "÷"
                     textView.text = str
                     miniClickFalse()
                 }
