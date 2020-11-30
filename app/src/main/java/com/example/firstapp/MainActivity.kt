@@ -283,10 +283,10 @@ class MainActivity : AppCompatActivity() {
 
     fun removeLastItem(view: View) {
         var screen = textView.text.toString()
-        if (screen[screen.length - 1].toString() == ".") {
+        if (screen.length > 0 && screen[screen.length - 1].toString() == ".") {
             dotExist = false
         }
-        if (!textView.text.toString().isEmpty()) {
+        if (textView.text.toString().isNotEmpty()) {
             str = screen.substring(0, screen.length - 1)
             textView.text = str
         }
